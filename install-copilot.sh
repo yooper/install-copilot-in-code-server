@@ -156,7 +156,7 @@ echo ""
 
 # Extensions to install
 # Use portable array declaration
-EXTENSIONS="GitHub.copilot GitHub.copilot-chat"
+EXTENSIONS="GitHub.copilot-chat"
 FAILED=0
 
 # Iterate through space-separated list for portability
