@@ -2,7 +2,7 @@
 
 # Extract VS Code version from code-server
 get_vscode_version() {
-    code-server --version | grep -E '^[0-9]+\.[0-9]+\.[0-9]+' | head -n1
+    code-server --version 2>&1| grep -Eo '^[0-9]+\.[0-9]+\.[0-9]+' | head -n1
 }
 
 # Get user-data-dir from running code-server process
